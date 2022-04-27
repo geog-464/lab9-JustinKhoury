@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+	<!-- link to leaflet styles -->
+<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
+<!-- link to leaflet scripts -->
+<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+	<!-- link to data -->
+<script type="text/javascript" src="data/megacities.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>lab9</title>
@@ -13,8 +19,16 @@
 
     <body>
         <!--put your initial page content here-->
+		<div id="div1">
 		
-        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+	This is inside basic html container
+	<p>This is text contained inside of a standard easily-stylable tag</p>
+	Q2. is due to HTML being allowed to load before the javascript files to prevent errors
+	<p> Q3. The onload method will allow the initialize function to be loaded as soon as the window is displayed. It allows the table to load after the window is ready so it does not try to open before and create an error. Its like giving a "green light" to the function that it can be used properly.</p>
+	<p> Q4. Citypop is an object that contains numbers and strings. It is similar to strings and integers in python.</p>
+</div>
+       <div id="mapdiv"> 
+	   <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
         <!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
